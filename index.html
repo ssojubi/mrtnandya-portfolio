@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Your Name</title>
+<link rel="icon" type="image/x-icon" href="public/common/images/profileImage.png">
+<title>Martina Andaya — Undergraduate Student</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
 </head>
 <body>
 <!-- <nav>
@@ -234,21 +236,19 @@
   </div>
 </div>
 
-<!-- CHAT FAB -->
 <button class="chat-fab" id="chatFab" title="Chat with me">💬</button>
 
-<!-- CHAT WINDOW -->
 <div class="chat-window hidden" id="chatWindow">
   <div class="chat-header">
     <div class="chat-avatar">👤</div>
     <div class="chat-header-info">
-      <div class="chat-header-name">Your Name</div>
+      <div class="chat-header-name">Martina</div>
       <div class="chat-header-status"><span class="status-dot"></span> Online now</div>
     </div>
     <button class="chat-close" id="chatClose">✕</button>
   </div>
   <div class="chat-messages" id="chatMessages">
-    <div class="msg bot">Hey there! 👋 I'm Your Name. Ask me anything about my work, projects, or how we can collaborate!</div>
+    <div class="msg bot">Hey there! 👋 I'm Martina. Ask me anything about my work, projects, or how we can collaborate!</div>
   </div>
   <div class="chat-input-row">
     <textarea class="chat-input" id="chatInput" placeholder="Type a message…" rows="1"></textarea>
@@ -256,83 +256,5 @@
   </div>
 </div>
 
-<script>
-  // THEME TOGGLE
-  const themeBtn = document.getElementById('themeBtn');
-  const html = document.documentElement;
-  let isDark = false;
-  themeBtn.addEventListener('click', () => {
-    isDark = !isDark;
-    html.setAttribute('data-theme', isDark ? 'dark' : 'light');
-    themeBtn.textContent = isDark ? '☀️' : '🌙';
-  });
-
-  // CHAT
-  const fab = document.getElementById('chatFab');
-  const win = document.getElementById('chatWindow');
-  const close = document.getElementById('chatClose');
-  const input = document.getElementById('chatInput');
-  const send = document.getElementById('chatSend');
-  const msgs = document.getElementById('chatMessages');
-  let chatOpen = false;
-
-  const toggle = () => {
-    chatOpen = !chatOpen;
-    win.classList.toggle('hidden', !chatOpen);
-    fab.textContent = chatOpen ? '✕' : '💬';
-  };
-  fab.addEventListener('click', toggle);
-  close.addEventListener('click', toggle);
-
-  const addMsg = (text, type) => {
-    const div = document.createElement('div');
-    div.className = `msg ${type}`;
-    div.textContent = text;
-    msgs.appendChild(div);
-    msgs.scrollTop = msgs.scrollHeight;
-  };
-
-  const showTyping = () => {
-    const t = document.createElement('div');
-    t.className = 'typing'; t.id = 'typing';
-    t.innerHTML = '<span></span><span></span><span></span>';
-    msgs.appendChild(t);
-    msgs.scrollTop = msgs.scrollHeight;
-    return t;
-  };
-
-  // Simple demo bot replies — replace with your API integration
-  const replies = [
-    "Thanks for reaching out! I'd love to connect. Feel free to schedule a call using the button above.",
-    "I specialize in full-stack development and AI integration. What kind of project are you working on?",
-    "Great question! I've worked with startups and MSMEs across various industries. Let me know more about your needs.",
-    "I'm currently available for consulting and project work. What's your timeline?",
-    "You can check out my latest projects in the section below — or let's hop on a quick call to discuss!"
-  ];
-  let replyIdx = 0;
-
-  const handleSend = () => {
-    const text = input.value.trim();
-    if (!text) return;
-    addMsg(text, 'user');
-    input.value = '';
-    input.style.height = 'auto';
-    const t = showTyping();
-    setTimeout(() => {
-      t.remove();
-      addMsg(replies[replyIdx % replies.length], 'bot');
-      replyIdx++;
-    }, 1000 + Math.random() * 600);
-  };
-
-  send.addEventListener('click', handleSend);
-  input.addEventListener('keydown', e => {
-    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); }
-  });
-  input.addEventListener('input', () => {
-    input.style.height = 'auto';
-    input.style.height = Math.min(input.scrollHeight, 100) + 'px';
-  });
-</script>
 </body>
 </html>
