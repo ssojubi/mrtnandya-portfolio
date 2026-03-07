@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Your Name</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- <nav>
+  <span class="nav-logo">YourName.</span>
+  <div class="nav-right">
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+  </div>
+</nav> -->
+
+<div class="container">
+
+  <!-- PROFILE HEADER -->
+  <div class="profile-header">
+    <div class="avatar-wrap">
+      <img src="public/common/images/profileImage.png" alt="Profile photo" class="avatar-img" id="profileAvatar">
+    </div>
+    <div class="profile-info">
+      <div class="profile-name-row">
+        <span class="profile-name">Martina Mari Andaya</span>
+        <!-- <span class="verified-badge">✓</span>
+        <span class="profile-badge">🏆 Award Name Here</span> -->
+        <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+      </div>
+      <div class="profile-location">📍 Laguna | Manila</div>
+      <div class="profile-title">
+        <span>3rd year Information Technology Student</span>
+      </div>
+      <div class="profile-actions">
+        <!-- <a href="#" class="btn btn-primary">📅 Schedule a Call</a> -->
+         <a href="mailto:mrtnandya@gmail.com?subject=Let's Connect&body=Hi, I came across your portfolio and would love to get in touch!" class="btn btn-ghost">
+           ✉️ Send Email
+        </a>
+        <a href="https://www.linkedin.com/in/martina-mari-andaya-430420358/" class="btn btn-ghost" target="_blank">
+            <img src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png" width="14" height="14" style="filter: var(--icon-filter)"> LinkedIn
+        </a>
+      </div>
+    
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid-2">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <!-- ABOUT -->
+      <div class="card" id="about">
+        <div class="card-title">About</div>
+        <div class="about-text">
+            <p>An Information Technology student with a growing interest in full-stack development, cloud computing and cybersecurity, building both technical and organizational skills through academic projects and active university involvement. </p>
+            <p>Has contributed to AWS Archer's Cloud Club, the Information Security Organization, Archers Network, COSCA-LOVE, and CATCH2T27 in roles spanning finance, documentation, logistics, livestream operations, and student welfare. Developed practical experience in full-stack development through university projects built with technologies such as JavaScript, Python, PHP, MySQL, and MongoDB. </p>
+            <p>Brings a strong foundation in attention to detail, documentation, cross-functional collaboration, and problem-solving developed through consistent involvement across multiple organizations. Currently seeking internship opportunities to gain real-world IT experience and explore where these interests can grow into a career.</p>  
+        </div>
+      </div>
+
+      <!-- TECH STACK -->
+      <div class="card" id="stack">
+        <div class="card-title">
+          Tech Stack
+          <!-- <a href="#" class="view-all">View All →</a> -->
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">Frontend</div>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">Backend</div>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">PHP</span>
+            <span class="tag">mySQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">DevOps & Cloud</div>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="card" id="projects">
+        <div class="card-title">
+          University Projects
+          <!-- <a href="#" class="view-all">View All →</a> -->
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-name">Kusina Kasama</div>
+            <div class="project-stack">Kotlin, SQLite, Spoonacular API</div>
+            <div class="project-desc">Users are able to search for ingredients they have at home and the mobile app will give them recipes they can do with what they have.
+        </div>
+            <!-- <div class="project-url">projectone.com</div> -->
+          </div>
+          <div class="project-card">
+            <div class="project-name">TopNotch Restaurant Review Application</div>
+            <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, MongoDB Atlas</div>
+            <div class="project-desc">A web application for discovering, reviewing, and rating restaurants. Users can create accounts, write reviews, and search for restaurants around the campus area.
+        </div>
+            <!-- <div class="project-url">projecttwo.com</div> -->
+          </div>
+          <div class="project-card">
+            <div class="project-name">Movie Ticketing System</div>
+            <div class="project-stack">HTML, CSS, PHP, XML, mySQL</div>
+            <div class="project-desc">A web application that allows users to browse movies, select showtimes, and book tickets.</div>
+            <!-- <div class="project-url">projectthree.io</div> -->
+          </div>
+          <div class="project-card">
+            <div class="project-name">Doc-Patient-Consultation-Database Application</div>
+            <div class="project-stack">HTML, XML, mySQL</div>
+            <div class="project-desc">A web appliocation that allows multi-user environments which allow staff and doctors to access records simultaneously.</div>
+            <!-- <div class="project-url">projectfour.app</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <!-- DEV CARD -->
+      <!-- <div class="devcard">
+        <div class="devcard-grid"></div>
+        <div style="position:relative;">
+          <div class="devcard-icon">▶_</div>
+          <div class="devcard-title">YOUR COMMUNITY</div>
+          <div class="devcard-sub">Access Card</div>
+          <div class="devcard-label">Founding Member</div>
+          <div class="devcard-name">YOUR NAME</div>
+          <div class="devcard-role">Developer</div>
+        </div>
+      </div> -->
+
+      <!-- EXPERIENCE -->
+      <div class="card">
+        <div class="card-title">Experience</div>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">BS Information Technology</div>
+                    <div class="exp-company">De La Salle University</div>
+                    </div>
+                    <div class="exp-year">2027</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Project Head</div>
+                    <div class="exp-company">COSCA-LOVE: Tools for Service</div>
+                    </div>
+                    <div class="exp-year">2026</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Hello World! 👋</div>
+                    <div class="exp-company">Wrote my first line of code</div>
+                    </div>
+                    <div class="exp-year">2023</div>
+                </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Organizations</div>
+            <div class="exp-list">
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Documentations Member</div>
+                    <div class="exp-company">COSCA-LOVE</div>
+                    </div>
+                    <div class="exp-year">2025</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Documentation-Logistics Officer</div>
+                    <div class="exp-company">Information Security Organization</div>
+                    </div>
+                    <div class="exp-year">2025</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Finance Officer</div>
+                    <div class="exp-company">AWS Archer’s Cloud Club</div>
+                    </div>
+                    <div class="exp-year">2025</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Livestream Operator</div>
+                    <div class="exp-company">Archers Network</div>
+                    </div>
+                    <div class="exp-year">2025</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-body">
+                    <div class="exp-role">Student Welfare Executive</div>
+                    <div class="exp-company">CATCH2T27</div>
+                    </div>
+                    <div class="exp-year">2025</div>
+                </div>
+            </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!-- CHAT FAB -->
+<button class="chat-fab" id="chatFab" title="Chat with me">💬</button>
+
+<!-- CHAT WINDOW -->
+<div class="chat-window hidden" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-avatar">👤</div>
+    <div class="chat-header-info">
+      <div class="chat-header-name">Your Name</div>
+      <div class="chat-header-status"><span class="status-dot"></span> Online now</div>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="msg bot">Hey there! 👋 I'm Your Name. Ask me anything about my work, projects, or how we can collaborate!</div>
+  </div>
+  <div class="chat-input-row">
+    <textarea class="chat-input" id="chatInput" placeholder="Type a message…" rows="1"></textarea>
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+</div>
+
+<script>
+  // THEME TOGGLE
+  const themeBtn = document.getElementById('themeBtn');
+  const html = document.documentElement;
+  let isDark = false;
+  themeBtn.addEventListener('click', () => {
+    isDark = !isDark;
+    html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    themeBtn.textContent = isDark ? '☀️' : '🌙';
+  });
+
+  // CHAT
+  const fab = document.getElementById('chatFab');
+  const win = document.getElementById('chatWindow');
+  const close = document.getElementById('chatClose');
+  const input = document.getElementById('chatInput');
+  const send = document.getElementById('chatSend');
+  const msgs = document.getElementById('chatMessages');
+  let chatOpen = false;
+
+  const toggle = () => {
+    chatOpen = !chatOpen;
+    win.classList.toggle('hidden', !chatOpen);
+    fab.textContent = chatOpen ? '✕' : '💬';
+  };
+  fab.addEventListener('click', toggle);
+  close.addEventListener('click', toggle);
+
+  const addMsg = (text, type) => {
+    const div = document.createElement('div');
+    div.className = `msg ${type}`;
+    div.textContent = text;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+  };
+
+  const showTyping = () => {
+    const t = document.createElement('div');
+    t.className = 'typing'; t.id = 'typing';
+    t.innerHTML = '<span></span><span></span><span></span>';
+    msgs.appendChild(t);
+    msgs.scrollTop = msgs.scrollHeight;
+    return t;
+  };
+
+  // Simple demo bot replies — replace with your API integration
+  const replies = [
+    "Thanks for reaching out! I'd love to connect. Feel free to schedule a call using the button above.",
+    "I specialize in full-stack development and AI integration. What kind of project are you working on?",
+    "Great question! I've worked with startups and MSMEs across various industries. Let me know more about your needs.",
+    "I'm currently available for consulting and project work. What's your timeline?",
+    "You can check out my latest projects in the section below — or let's hop on a quick call to discuss!"
+  ];
+  let replyIdx = 0;
+
+  const handleSend = () => {
+    const text = input.value.trim();
+    if (!text) return;
+    addMsg(text, 'user');
+    input.value = '';
+    input.style.height = 'auto';
+    const t = showTyping();
+    setTimeout(() => {
+      t.remove();
+      addMsg(replies[replyIdx % replies.length], 'bot');
+      replyIdx++;
+    }, 1000 + Math.random() * 600);
+  };
+
+  send.addEventListener('click', handleSend);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); }
+  });
+  input.addEventListener('input', () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 100) + 'px';
+  });
+</script>
+</body>
+</html>
