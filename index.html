@@ -3,59 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="public/common/images/profileImage.png">
-<title>Martina Andaya — Undergraduate Student</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="public/common/images/profileImage.png">
+<meta name="description" content="Martina Mari Andaya — Information Technology student focused on DevOps and security. Explore infrastructure projects, cybersecurity experience, and technical skills.">
+<title>Martina Andaya — DevOps & Security</title>
 <link rel="stylesheet" href="styles.css">
 <script src="main.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="container">
 
   <!-- PROFILE HEADER -->
-  <div class="profile-header">
+  <header class="profile-header">
     <div class="avatar-wrap">
-      <img src="public/common/images/profileImage.png" alt="Profile photo" class="avatar-img" id="profileAvatar">
+      <img src="public/common/images/profileImage2.png" alt="Martina Mari Andaya" width="128" height="128" class="avatar-img" id="profileAvatar">
     </div>
     <div class="profile-info">
       <div class="profile-name-row">
-        <span class="profile-name">Martina Mari Andaya</span>
-        <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+        <h1 class="profile-name">Martina Mari Andaya</h1>
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">🌙</button>
       </div>
       <div class="profile-location">📍 Laguna | Manila</div>
-      <div class="profile-location">+63 921 345 4907</div>
+      <a class="profile-location phone-link" href="tel:+639213454907">+63 921 345 4907</a>
       <div class="profile-title">
-        <span>3rd year Information Technology Student</span>
+        <span>4th year Information Technology Student</span>
+        <div class="profile-focus">DevOps &amp; Security</div>
       </div>
       <div class="profile-actions">
-        <a href="mailto:mrtnandya@gmail.com?subject=Let's Connect&body=Hi, I came across your portfolio and would love to get in touch!" class="btn btn-ghost">
-          ✉️ Send Email
+        <a href="mailto:mrtnandya@gmail.com?subject=Let's Connect&body=Hi, I came across your portfolio and would love to get in touch!" class="btn btn-primary">
+          Send email
         </a>
-        <a href="https://www.linkedin.com/in/martina-mari-andaya-430420358/" class="btn btn-ghost" target="_blank">
-          <img src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png" width="14" height="14" style="filter: var(--icon-filter)"> LinkedIn
+        <a href="https://www.linkedin.com/in/martina-mari-andaya-430420358/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
-  </div>
+  </header>
 
   <!-- MAIN GRID -->
-  <div class="grid-2">
+  <main class="grid-2" id="main">
 
     <!-- LEFT COLUMN -->
     <div>
       <!-- ABOUT -->
       <div class="card" id="about">
-        <div class="card-title">About</div>
+        <h2 class="card-title">About</h2>
         <div class="about-text">
-          <p>An Information Technology student with a growing interest in full-stack development, cloud computing, and cybersecurity, building both technical and organizational skills through academic projects and active university involvement.</p>
-          <p>Has contributed to AWS Archers Cloud Club, the Information Security Organization, Archers Network, COSCA-LOVE, and CATCH2T27 in roles spanning finance, documentation, logistics, livestream operations, and student welfare. Developed practical experience in full-stack development through university projects built with technologies such as JavaScript, Python, PHP, MySQL, and MongoDB.</p>
-          <p>Brings a strong foundation in attention to detail, documentation, cross-functional collaboration, and problem-solving developed through consistent involvement across multiple organizations. Currently seeking internship opportunities to gain real-world IT experience and explore where these interests can grow into a career.</p>
+          <p>I’m an Information Technology student at De La Salle University focused on DevOps and security. I’m interested in building reliable infrastructure and understanding how to protect the systems running on it.</p>
+          <p>As the main developer and DevOps lead for my capstone, I’m designing on-premises infrastructure for a multi-unit FER service, using Docker, Kubernetes, Traefik, and Kafka to support secure routing, independent scaling, and real-time monitoring.</p>
+          <p>I’m currently a Security Engineer Intern at RT&amp;Co Cybersecurity, supporting vulnerability assessments, penetration testing, threat intelligence, and incident response. My earlier internships at KPMG in the Philippines and Markie Cadag gave me experience in cybersecurity documentation, data privacy assessments, and responsive web development.</p>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="card" id="projects">
+        <h2 class="card-title">University Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card project-featured">
+            <div class="project-role">Capstone · Main Developer / DevOps Lead</div>
+            <h3 class="project-name">Multi-Unit FER Infrastructure &amp; Deployment</h3>
+            <div class="project-stack">React, Vite, FastAPI, Express.js, Socket.IO, MySQL, Apache Kafka, Docker, Kubernetes, Traefik</div>
+            <div class="project-desc">Designed centralized, on-premises infrastructure to scale a standalone FER service to 20–30 concurrent kiosk units. Containerized frontend, API, messaging, database, and FER-processing services, with Kubernetes orchestration designed for independent scaling and fault isolation. Integrated Traefik, HTTPS, WebSockets, Kafka, and persistent storage for secure routing, asynchronous processing, and real-time kiosk monitoring.</div>
+          </div>
+          <div class="project-card">
+            <div class="project-role">Backend Developer</div>
+            <h3 class="project-name">Cool Beans E-Commerce Platform</h3>
+            <div class="project-stack">HTML, JavaScript, PHP, MySQL</div>
+            <div class="project-desc">Multi-user e-commerce platform with a 21-table ACID-compliant MySQL database using stored procedures and triggers. Features a three-tier RBAC system (Admin, Staff, Customer) with scoped permissions per role.</div>
+          </div>
+          <div class="project-card">
+            <div class="project-role">Backend Developer</div>
+            <h3 class="project-name">TopNotch Restaurant Review Application</h3>
+            <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, MongoDB Atlas</div>
+            <div class="project-desc">A web application for discovering, reviewing, and rating restaurants. Users can create accounts, write reviews, and search for restaurants around the campus area. Deployed on Render.</div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-name">Kusina Kasama</h3>
+            <div class="project-stack">Kotlin, SQLite, Spoonacular API</div>
+            <div class="project-desc">Mobile app that integrates the Spoonacular API to provide real-time recipe recommendations based on ingredients the user has at home.</div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-name">Movie Ticketing System</h3>
+            <div class="project-stack">HTML, CSS, PHP, XML, MySQL</div>
+            <div class="project-desc">End-to-end online ticketing platform covering movie browsing, showtime selection, and booking — complete transactional system with a working UI-to-database pipeline.</div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-name">Doc-Patient Consultation Database</h3>
+            <div class="project-stack">HTML, XML, MySQL</div>
+            <div class="project-desc">Multi-user web application allowing staff and doctors to access and manage patient consultation records simultaneously.</div>
+          </div>
         </div>
       </div>
 
       <!-- TECH STACK -->
       <div class="card" id="stack">
-        <div class="card-title">Tech Stack</div>
+        <h2 class="card-title">Technical Skills</h2>
+        <div class="stack-group">
+          <div class="stack-label">DevOps &amp; Cloud</div>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Traefik</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Render</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">Networking &amp; Security</div>
+          <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">VLANs</span>
+            <span class="tag">Inter-VLAN Routing</span>
+            <span class="tag">ACLs</span>
+            <span class="tag">EtherChannel</span>
+            <span class="tag">LoRa/LoRaWAN</span>
+          </div>
+        </div>
         <div class="stack-group">
           <div class="stack-label">Languages</div>
           <div class="tags">
@@ -65,52 +132,50 @@
             <span class="tag">SQL</span>
             <span class="tag">Java</span>
             <span class="tag">C</span>
-            <span class="tag">HTML/CSS</span>
             <span class="tag">Bash</span>
-            <span class="tag">Kotlin</span>
+            <span class="tag">HTML/CSS</span>
           </div>
         </div>
         <div class="stack-group">
-          <div class="stack-label">Frameworks & Databases</div>
+          <div class="stack-label">Frameworks &amp; Runtime</div>
           <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
             <span class="tag">Node.js</span>
             <span class="tag">Express.js</span>
-            <span class="tag">React</span>
             <span class="tag">FastAPI</span>
+            <span class="tag">Socket.IO</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">Messaging &amp; APIs</div>
+          <div class="tags">
+            <span class="tag">Apache Kafka</span>
+            <span class="tag">RESTful APIs</span>
+            <span class="tag">WebSockets</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <div class="stack-label">Databases</div>
+          <div class="tags">
             <span class="tag">MySQL</span>
             <span class="tag">MongoDB Atlas</span>
             <span class="tag">SQLite</span>
           </div>
         </div>
         <div class="stack-group">
-          <div class="stack-label">DevOps & Cloud</div>
+          <div class="stack-label">Database Concepts</div>
           <div class="tags">
-            <span class="tag">AWS</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Kafka</span>
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Vercel</span>
-            <span class="tag">Render</span>
-          </div>
-        </div>
-        <div class="stack-group">
-          <div class="stack-label">Concepts</div>
-          <div class="tags">
-            <span class="tag">RBAC</span>
             <span class="tag">ACID Compliance</span>
-            <span class="tag">RESTful APIs</span>
-            <span class="tag">Network Security</span>
-            <span class="tag">Linux</span>
-            <span class="tag">VLAN/Inter-VLAN Routing</span>
-            <span class="tag">ACLs</span>
-            <span class="tag">EtherChannel</span>
-            <span class="tag">LoRa/LoRaWAN</span>
+            <span class="tag">Stored Procedures</span>
+            <span class="tag">Triggers</span>
           </div>
         </div>
         <div class="stack-group">
           <div class="stack-label">Tools</div>
           <div class="tags">
             <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
             <span class="tag">Cisco Packet Tracer</span>
           </div>
         </div>
@@ -118,7 +183,7 @@
 
       <!-- CURRENTLY LEARNING -->
       <div class="card" id="learning">
-        <div class="card-title">Currently Learning</div>
+        <h2 class="card-title">Currently Learning</h2>
         <div class="stack-group">
           <div class="tags">
             <span class="tag">Google Cybersecurity Certificate</span>
@@ -129,181 +194,129 @@
         </div>
       </div>
 
-      <!-- PROJECTS -->
-      <div class="card" id="projects">
-        <div class="card-title">University Projects</div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-name">Cool Beans E-Commerce Platform</div>
-            <div class="project-stack">HTML, JavaScript, PHP, MySQL</div>
-            <div class="project-desc">Multi-user e-commerce platform with a 21-table ACID-compliant MySQL database using stored procedures and triggers. Features a three-tier RBAC system (Admin, Staff, Customer) with scoped permissions per role.</div>
-          </div>
-          <div class="project-card">
-            <div class="project-name">TopNotch Restaurant Review Application</div>
-            <div class="project-stack">HTML, CSS, JavaScript, Node.js, Express.js, MongoDB Atlas</div>
-            <div class="project-desc">A web application for discovering, reviewing, and rating restaurants. Users can create accounts, write reviews, and search for restaurants around the campus area. Deployed on Render.</div>
-          </div>
-          <div class="project-card">
-            <div class="project-name">Kusina Kasama</div>
-            <div class="project-stack">Kotlin, SQLite, Spoonacular API</div>
-            <div class="project-desc">Mobile app that integrates the Spoonacular API to provide real-time recipe recommendations based on ingredients the user has at home.</div>
-          </div>
-          <div class="project-card">
-            <div class="project-name">Movie Ticketing System</div>
-            <div class="project-stack">HTML, CSS, PHP, XML, MySQL</div>
-            <div class="project-desc">End-to-end online ticketing platform covering movie browsing, showtime selection, and booking — complete transactional system with a working UI-to-database pipeline.</div>
-          </div>
-          <div class="project-card">
-            <div class="project-name">Doc-Patient Consultation Database</div>
-            <div class="project-stack">HTML, XML, MySQL</div>
-            <div class="project-desc">Multi-user web application allowing staff and doctors to access and manage patient consultation records simultaneously.</div>
-          </div>
-        </div>
-      </div>
+
     </div>
 
     <!-- RIGHT COLUMN -->
     <div>
       <!-- EDUCATION -->
-      <div class="card">
-        <div class="card-title">Education</div>
+      <div class="card" id="education">
+        <h2 class="card-title">Education</h2>
         <div class="exp-list">
           <div class="exp-item">
             <div class="exp-dot"></div>
             <div class="exp-body">
               <div class="exp-role">BS Information Technology</div>
               <div class="exp-company">De La Salle University</div>
-              <div class="exp-company">Expected Graduation: August 2027</div>
+              <!-- TODO: Confirm degree start month; use datetime="YYYY-MM" and display "Mon YYYY". -->
+              <div class="exp-year"><time datetime="2023">2023</time> – <time datetime="2027-08">Aug 2027</time> <span>(expected)</span></div>
             </div>
-            <div class="exp-year">2023–</div>
+
           </div>
           <div class="exp-item">
             <div class="exp-dot"></div>
             <div class="exp-body">
               <div class="exp-role">STEM</div>
               <div class="exp-company">De La Salle University Laguna Campus</div>
+              <!-- TODO: Add STEM start month/year and graduation month; display "Mon YYYY – Mon YYYY". -->
+              <div class="exp-year"><time datetime="2023">2023</time> · Graduated</div>
             </div>
-            <div class="exp-year">2023</div>
+
           </div>
         </div>
       </div>
 
       <!-- EXPERIENCE -->
-      <div class="card">
-        <div class="card-title">Experience</div>
+      <div class="card" id="experience">
+        <h2 class="card-title">Experience</h2>
         <div class="exp-list">
           <div class="exp-item">
-            <div class="exp-dot"></div>
+            <div class="exp-dot" aria-hidden="true"></div>
             <div class="exp-body">
-              <div class="exp-role">Cybersecurity & Data Privacy Intern</div>
-              <div class="exp-company">KPMG Philippines</div>
+              <div class="exp-role">Security Engineer Intern</div>
+              <div class="exp-company">RT&amp;Co Cybersecurity</div>
+              <div class="exp-year"><time datetime="2026-09">Sep 2026</time> – Present</div>
+              <p class="exp-description">Support vulnerability assessments, penetration testing, threat intelligence, incident response, cybersecurity awareness training, and security tool research.</p>
             </div>
-            <div class="exp-year">2026</div>
           </div>
           <div class="exp-item">
-            <div class="exp-dot"></div>
+            <div class="exp-dot" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-role">Cybersecurity &amp; Data Privacy Intern</div>
+              <div class="exp-company">R.G. Manabat &amp; Co. (KPMG in the Philippines)</div>
+              <div class="exp-year"><time datetime="2026-06">Jun 2026</time> – <time datetime="2026-07">Jul 2026</time></div>
+              <p class="exp-description">Prepared technical and compliance documentation for government cybersecurity bids and supported Data Privacy Impact Assessments (DPIA).</p>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot" aria-hidden="true"></div>
             <div class="exp-body">
               <div class="exp-role">Web Developer Intern</div>
-              <div class="exp-company">Markie Cadag Custom-Made Fashion</div>
+              <div class="exp-company">Markie Cadag</div>
+              <div class="exp-year"><time datetime="2026-03">Mar 2026</time> – <time datetime="2026-05">May 2026</time></div>
+              <p class="exp-description">Built a responsive, five-page promotional website with HTML, CSS, and JavaScript that met DTI submission requirements.</p>
             </div>
-            <div class="exp-year">2026</div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-dot"></div>
-            <div class="exp-body">
-              <div class="exp-role">Project Head — Tools for Service</div>
-              <div class="exp-company">COSCA-LOVE</div>
-            </div>
-            <div class="exp-year">2026</div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-dot"></div>
-            <div class="exp-body">
-              <div class="exp-role">Livestream Operator</div>
-              <div class="exp-company">Archers Network</div>
-            </div>
-            <div class="exp-year">2025</div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-dot"></div>
-            <div class="exp-body">
-              <div class="exp-role">Hello World! 👋</div>
-              <div class="exp-company">Wrote my first line of code</div>
-            </div>
-            <div class="exp-year">2023</div>
           </div>
         </div>
       </div>
 
       <!-- ORGANIZATIONS -->
-      <div class="card">
-        <div class="card-title">Organizations</div>
+      <div class="card" id="organizations">
+        <h2 class="card-title">Organizations</h2>
         <div class="exp-list">
           <div class="exp-item">
-            <div class="exp-dot"></div>
+            <div class="exp-dot" aria-hidden="true"></div>
             <div class="exp-body">
-              <div class="exp-role">Documentation & Logistics Officer</div>
+              <div class="exp-role">Documentation &amp; Logistics Officer</div>
               <div class="exp-company">Information Security Organization</div>
+              <div class="exp-year"><time datetime="2025-10">Oct 2025</time> – Present</div>
+              <p class="exp-description">Managed documentation and logistics for 10+ cybersecurity workshops and events per semester. Attended Blue Teaming and CTF workshops.</p>
             </div>
-            <div class="exp-year">2025</div>
           </div>
           <div class="exp-item">
-            <div class="exp-dot"></div>
+            <div class="exp-dot" aria-hidden="true"></div>
             <div class="exp-body">
               <div class="exp-role">Finance Officer</div>
               <div class="exp-company">AWS Archers Cloud Club</div>
+              <div class="exp-year"><time datetime="2025-10">Oct 2025</time> – Present</div>
+              <p class="exp-description">Managed budgeting for cloud computing workshops and technical events. Attended the She++: Women in Cloud seminar.</p>
             </div>
-            <div class="exp-year">2025</div>
           </div>
           <div class="exp-item">
             <div class="exp-dot"></div>
             <div class="exp-body">
               <div class="exp-role">Livestream Operator</div>
               <div class="exp-company">Archers Network</div>
+              <!-- TODO: Confirm start and end months/years; display "Mon YYYY – Mon YYYY" or "Mon YYYY – Present" if ongoing. -->
+              <div class="exp-year"><time datetime="2025">2025</time></div>
             </div>
-            <div class="exp-year">2025</div>
+
           </div>
           <div class="exp-item">
-            <div class="exp-dot"></div>
+            <div class="exp-dot" aria-hidden="true"></div>
             <div class="exp-body">
-              <div class="exp-role">Documentations Member</div>
+              <div class="exp-role">Project Head (Tools for Service) · Documentations Member</div>
               <div class="exp-company">COSCA-LOVE</div>
+              <div class="exp-year"><time datetime="2026-02">Feb 2026</time> – Present</div>
+              <p class="exp-description">Co-led a shared AV equipment lending program and coordinated four committees across campaigns, inventory systems, and equipment storage.</p>
             </div>
-            <div class="exp-year">2025</div>
           </div>
           <div class="exp-item">
             <div class="exp-dot"></div>
             <div class="exp-body">
               <div class="exp-role">Student Welfare Executive</div>
               <div class="exp-company">CATCH2T27</div>
+              <!-- TODO: Confirm start and end months/years; display "Mon YYYY – Mon YYYY" or "Mon YYYY – Present" if ongoing. -->
+              <div class="exp-year"><time datetime="2025">2025</time></div>
             </div>
-            <div class="exp-year">2025</div>
+
           </div>
         </div>
       </div>
 
     </div>
-  </div>
-</div>
-
-<button class="chat-fab" id="chatFab" title="Chat with me">💬</button>
-
-<div class="chat-window hidden" id="chatWindow">
-  <div class="chat-header">
-    <div class="chat-avatar">👤</div>
-    <div class="chat-header-info">
-      <div class="chat-header-name">Martina</div>
-      <div class="chat-header-status"><span class="status-dot"></span> Online now</div>
-    </div>
-    <button class="chat-close" id="chatClose">✕</button>
-  </div>
-  <div class="chat-messages" id="chatMessages">
-    <div class="msg bot">Hey there! 👋 I'm Martina. Ask me anything about my work, projects, or how we can collaborate!</div>
-  </div>
-  <div class="chat-input-row">
-    <textarea class="chat-input" id="chatInput" placeholder="Type a message…" rows="1"></textarea>
-    <button class="chat-send" id="chatSend">➤</button>
-  </div>
+  </main>
+  <footer>Martina Mari Andaya <a href="#">Back to top ↑</a></footer>
 </div>
 
 </body>
