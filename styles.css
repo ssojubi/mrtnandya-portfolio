@@ -110,3 +110,5 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; }
 .project-featured { grid-column: 1 / -1; background: var(--accent-light); }
 .project-role { font-size: .8125rem; font-weight: 600; color: var(--text-muted); margin-bottom: .5rem; }
 .exp-description { font-size: .875rem; line-height: 1.7; color: var(--text-muted); margin-top: .75rem; }
+.exp-highlights { padding-left: 1.25rem; }
+.exp-highlights li + li { margin-top: .5rem; }
